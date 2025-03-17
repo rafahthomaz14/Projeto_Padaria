@@ -40,7 +40,7 @@ export default function Header() {
                         <input
                             type="text"
                             placeholder="Olá, posso te ajudar?"
-                            className="ml-2 w-full"
+                            className="ml-2 w-full focus:outline-none"
                         />
                     </div>
 
