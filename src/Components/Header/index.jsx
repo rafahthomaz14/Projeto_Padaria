@@ -19,7 +19,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="flex  bg-gray-600  w-full h-18 drop-shadow-lg items-center ">
+            <div className="flex  bg-gray-800  w-full h-18 drop-shadow-lg items-center ">
 
                 {/* Menu de hamburger */}
                 <button className="block md:hidden p-7" onClick={toggleMenu} >
@@ -44,12 +44,12 @@ export default function Header() {
                         />
                     </div>
 
-                    {/* Criar botao do modo */}
+                    {/* Criar botao do modo
                     <div className="modo-dark">
                         <div className="card w-15 h-5 bg-gray-400 rounded">
 
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="menu flex items-center justify-end lg:p-5">
 
