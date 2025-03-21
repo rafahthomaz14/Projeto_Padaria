@@ -6,16 +6,12 @@ import { FaSearch } from "react-icons/fa";
 export default function Header() {
 
     const [menuVisivel, setMenuVisivel] = useState(false)
-    const [modoAtivo, setModoAtivo] = useState(false)
+
     // Abrindo e fechando o menu
     const toggleMenu = () => {
         setMenuVisivel(!menuVisivel)
     };
 
-    //modo dark lite
-    const Modo = () => {
-        setModoAtivo(!modoAtivo)
-    }
 
     return (
         <>
