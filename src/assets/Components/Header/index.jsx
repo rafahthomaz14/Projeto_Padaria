@@ -3,6 +3,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 export default function Header() {
 
     const [menuVisivel, setMenuVisivel] = useState(false)
@@ -40,20 +41,16 @@ export default function Header() {
                         />
                     </div>
 
-                    {/* Criar botao do modo
-                    <div className="modo-dark">
-                        <div className="card w-15 h-5 bg-gray-400 rounded">
-
-                        </div>
-                    </div> */}
 
                     <div className="menu flex items-center justify-end lg:p-5">
 
                         {/* Quando estiver na tela grande aparece os menu */}
                         <div className="hidden md:flex space-x-5">
                             <div className="User p-5">
-                                <FaUserAlt color="white" size={30} className="ml-8" />
-                                <p className="text-gray-100 font-bold">Minha conta</p>
+                                <Link to='/login'>
+                                    <FaUserAlt color="white" size={30} className="ml-8" />
+                                    <p className="text-gray-100 font-bold">Minha conta</p>
+                                </Link>
                             </div>
                             <div className="Pedidos p-5">
                                 <IoDocumentText color="white" size={30} className="ml-11" />
